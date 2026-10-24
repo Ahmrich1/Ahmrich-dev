@@ -1,0 +1,360 @@
+/* Healthy Recipe Finder - homepage styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #193d37;
+    --green-light: #35564f;
+    --cream: #f7f6f2;
+    --line: #e7e8e2;
+    --peach: #f7b18c;
+    --text: #415650;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    border-bottom: 1px solid var(--line);
+    background: rgba(247, 246, 242, 0.96);
+}
+
+.nav-wrap {
+    max-width: 1120px;
+    min-height: 72px;
+    padding: 0 24px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.brand-mark {
+    display: inline-block;
+    color: #f6a27c;
+    font-size: 27px;
+    margin-right: 5px;
+    transform: rotate(-30deg);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    font-size: 14px;
+}
+
+.main-nav a {
+    padding: 7px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    border-color: var(--peach);
+}
+
+.nav-button,
+.button {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.nav-button:hover,
+.button:hover {
+    background: #28584e;
+}
+
+.hero {
+    text-align: center;
+    padding: 52px 24px 0;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.15;
+    letter-spacing: -1.7px;
+    margin: 0 0 10px;
+}
+
+.hero h1 span {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 span::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -3px;
+    right: -4px;
+    bottom: 4px;
+    height: 15px;
+    background: #f8d2bd;
+    border-radius: 3px;
+}
+
+.hero p {
+    color: var(--text);
+    font-size: 15px;
+    margin: 0 auto 24px;
+}
+
+.hero-photo {
+    display: block;
+    width: min(100%, 940px);
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    margin: 48px auto 0;
+    border: 8px solid white;
+    border-radius: 18px;
+}
+
+.content-width {
+    width: min(100% - 48px, 940px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefits {
+    padding: 45px 0 54px;
+    border-bottom: 1px solid var(--line);
+}
+
+.benefits h2,
+.callout h2 {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: -0.8px;
+    margin: 0 0 30px;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px;
+}
+
+.benefit-icon {
+    width: 42px;
+    height: 42px;
+    background: white;
+    border: 1px solid #ecece7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.peach { color: #f3a27b; }
+.mint { color: #53b6a8; }
+.lilac { color: #aab1e7; }
+
+.benefit h3 {
+    font-size: 22px;
+    margin: 0 0 5px;
+    letter-spacing: -0.5px;
+}
+
+.benefit p,
+.real-life p,
+.callout p {
+    color: var(--text);
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.real-life {
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+.real-life h2 {
+    font-size: 32px;
+    letter-spacing: -0.8px;
+    margin: 0 0 15px;
+}
+
+.real-life strong {
+    text-decoration: underline;
+    text-decoration-color: var(--peach);
+    text-decoration-thickness: 3px;
+}
+
+.real-life img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.callout {
+    position: relative;
+    min-height: 255px;
+    padding: 42px 25px;
+    margin-bottom: 24px;
+    background: #e9eee8;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.callout h2 {
+    margin-bottom: 8px;
+}
+
+.callout p {
+    margin-bottom: 23px;
+}
+
+.decor {
+    position: absolute;
+    font-size: 130px;
+    line-height: 1;
+    opacity: 0.45;
+    font-weight: bold;
+}
+
+.decor-left {
+    left: -12px;
+    bottom: 5px;
+    color: #f5a078;
+    transform: rotate(35deg);
+}
+
+.decor-right {
+    right: -10px;
+    bottom: 5px;
+    color: #54b5a6;
+    transform: rotate(-35deg);
+}
+
+.callout-copy {
+    position: relative;
+    z-index: 1;
+}
+
+.site-footer {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text);
+    font-size: 12px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--green);
+}
+
+@media (max-width: 700px) {
+    .nav-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 14px 18px;
+        gap: 12px 20px;
+    }
+
+    .brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+    }
+
+    .hero {
+        padding-top: 38px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+
+    .hero-photo {
+        height: 270px;
+        margin-top: 32px;
+    }
+
+    .benefit-grid,
+    .real-life {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-grid {
+        gap: 25px;
+    }
+
+    .benefits h2 {
+        font-size: 28px;
+    }
+
+    .real-life {
+        padding: 45px 0;
+        gap: 22px;
+    }
+
+    .real-life img {
+        height: 270px;
+    }
+
+    .callout {
+        min-height: 230px;
+    }
+
+    .callout h2 {
+        font-size: 27px;
+    }
+}

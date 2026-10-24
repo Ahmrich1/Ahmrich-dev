@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipe Finder | Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="index.html"><span class="brand-mark">◖</span> Healthy Recipe Finder</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a class="active" href="recipes.html">Recipes</a>
+            </nav>
+            <a class="nav-button" href="#recipe-list">Browse recipes</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Explore our simple, healthy recipes</h1>
+            <p>Discover eight quick, whole-food dishes that fit real-life schedules and taste<br class="desktop-break"> amazing. Use the search bar to find a recipe by name or ingredient, or simply scroll<br class="desktop-break"> the list and let something delicious catch your eye.</p>
+        </section>
+
+        <section class="recipe-section" id="recipe-list">
+            <div class="recipe-tools">
+                <div class="filter-group">
+                    <label for="prep-time">Max Prep Time</label>
+                    <select id="prep-time" name="prep-time">
+                        <option>Any time</option>
+                        <option>5 minutes</option>
+                        <option>10 minutes</option>
+                        <option>15 minutes</option>
+                    </select>
+                    <label for="cook-time">Max Cook Time</label>
+                    <select id="cook-time" name="cook-time">
+                        <option>Any time</option>
+                        <option>5 minutes</option>
+                        <option>10 minutes</option>
+                        <option>15 minutes</option>
+                        <option>20 minutes</option>
+                    </select>
+                </div>
+                <form class="search-box" action="#" method="get">
+                    <span aria-hidden="true">⌕</span>
+                    <input type="search" name="search" placeholder="Search by name or ingredient..." aria-label="Search by name or ingredient">
+                </form>
+            </div>
+
+            <div class="recipe-grid">
+                <article class="recipe-card">
+                    <img src="images/chickpea-salad.jpg" alt="Mediterranean chickpea salad with tomatoes and cucumber">
+                    <div class="card-content">
+                        <h2>Mediterranean Chickpea Salad</h2>
+                        <p class="description">A refreshing, protein-packed salad tossed in a lemon-olive oil dressing.</p>
+                        <div class="meta"><span>♟ Servings: 2</span><span>◷ Prep: 10 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 0 min</span></div>
+                        <a class="view-button" href="#chickpea">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/avocado-toast.jpg" alt="Avocado and tomato wholegrain toast">
+                    <div class="card-content">
+                        <h2>Avocado &amp; Tomato Wholegrain Toast</h2>
+                        <p class="description">Creamy avocado spread over toasted wholegrain bread, topped with juicy tomatoes.</p>
+                        <div class="meta"><span>♟ Servings: 1</span><span>◷ Prep: 5 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 5 mins</span></div>
+                        <a class="view-button" href="#avocado">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/lemon-salmon.jpg" alt="Pan cooked salmon with asparagus and lemon">
+                    <div class="card-content">
+                        <h2>One-Pan Lemon Garlic Salmon with Asparagus</h2>
+                        <p class="description">A 15-minute weeknight dinner of flaky salmon and tender asparagus.</p>
+                        <div class="meta"><span>♟ Servings: 2</span><span>◷ Prep: 5 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 12 mins</span></div>
+                        <a class="view-button" href="#salmon">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/quinoa-bowl.jpg" alt="Quinoa bowl with roasted vegetables, chickpeas and avocado">
+                    <div class="card-content">
+                        <h2>Quinoa Veggie Power Bowl</h2>
+                        <p class="description">A balanced bowl of fluffy quinoa, roasted veggies and healthy fats.</p>
+                        <div class="meta"><span>♟ Servings: 2</span><span>◷ Prep: 10 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 15 mins</span></div>
+                        <a class="view-button" href="#quinoa">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/black-bean-tacos.jpg" alt="Sweet potato and black bean tacos">
+                    <div class="card-content">
+                        <h2>Sweet Potato Black Bean Tacos</h2>
+                        <p class="description">Smoky roasted sweet potatoes and black beans tucked into warm tortillas.</p>
+                        <div class="meta"><span>♟ Servings: 3</span><span>◷ Prep: 10 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 15 mins</span></div>
+                        <a class="view-button" href="#tacos">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/yogurt-parfait.jpg" alt="Greek yogurt berry parfait with granola">
+                    <div class="card-content">
+                        <h2>Greek Yogurt Berry Parfait</h2>
+                        <p class="description">Layers of creamy Greek yogurt, fresh berries and crunchy oats for a high-protein snack.</p>
+                        <div class="meta"><span>♟ Servings: 1</span><span>◷ Prep: 5 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 0 min</span></div>
+                        <a class="view-button" href="#parfait">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/lentil-soup.jpg" alt="Lentil and spinach soup in a bowl">
+                    <div class="card-content">
+                        <h2>Lentil &amp; Spinach Soup</h2>
+                        <p class="description">A hearty 30-minute soup rich in plant protein and iron.</p>
+                        <div class="meta"><span>♟ Servings: 4</span><span>◷ Prep: 10 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 20 mins</span></div>
+                        <a class="view-button" href="#soup">View Recipe</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <img src="images/banana-pancakes.jpg" alt="Banana oat pancakes topped with berries">
+                    <div class="card-content">
+                        <h2>Banana Oat Pancakes</h2>
+                        <p class="description">Flour-free pancakes sweetened naturally with ripe bananas.</p>
+                        <div class="meta"><span>♟ Servings: 2</span><span>◷ Prep: 5 mins</span></div>
+                        <div class="meta"><span>♨ Cook: 10 mins</span></div>
+                        <a class="view-button" href="#pancakes">View Recipe</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made with ❤️ and 🥑</p>
+        <div class="social-links"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Social">♥</a><a href="#" aria-label="TikTok">♪</a></div>
+    </footer>
+</body>
+</html>
